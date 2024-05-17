@@ -1,23 +1,34 @@
+import { createUserProfiles } from "./userInfo";
+
 let newArray = [];
-function processArray(arrayOfNumbers) {
-   for (i = 0; i < arrayOfNumbers.length(); i++) {
+function processArray(arrayOfNumbers) {;
+   for (let i = 0; i < arrayOfNumbers.length; i++) {
     if (arrayOfNumbers[i] % 2 === 0) {
-      return newArray.push(arrayOfNumbers[i] * arrayOfNumbers[i]);
+       newArray.push(arrayOfNumbers[i] * arrayOfNumbers[i]);
     }
     else {
-      return newArray.push(3 * arrayOfNumbers[i]);
+      newArray.push(3 * arrayOfNumbers[i]);
     }
    }
+   return newArray;
 }
 
+console.log(processArray([1,2,5,8]));
 
-function formatArrayStrings(arrayOfStrings, arrayOfNumbers) {
-  const result = processArray(arrayOfNumbers);
-  for (i = 0; i < arrayOfStrings.length(); i++) {
-    if (result[i] % 2 === 0) {
-      arrayOfStrings[i].capitalize();
+
+function formatArrayStrings(arrayOfStrings, newArray) {
+  let newString = [];
+  for (let i = 0; i < arrayOfStrings.length; i++) {
+    if (newArray[i] % 2 === 0) {
+      newString.push(arrayOfStrings[i].toUpperCase());
     } else {
-      arrayOfStrings[i].lowercase();
+      newString.push(arrayOfStrings[i] = arrayOfStrings[i].toLowerCase());
     }
   }
+  return newString;
 }
+
+const names = ['John', 'Jane', 'Mike'];
+const modifiedNames = ['JOHN', 'jane', 'MIKE'];
+const profiles = createUserProfiles(names, modifiedNames);
+console.log(profiles);
