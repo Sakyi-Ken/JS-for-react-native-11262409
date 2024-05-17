@@ -1,11 +1,13 @@
-import { formatArrayStrings } from "./arrayManipulation";
+import { processArray, formatArrayStrings } from "./arrayManipulation";
 
  function createUserProfiles(arrayOfStrings, newString) {
+  const result = processArray(newString);
+  formatArrayStrings(arrayOfStrings, result);
   const profiles = [];
   for (let i = 0; i < arrayOfStrings.length; i++) {
     profiles.push({
       originalName: arrayOfStrings[i],
-      modifiedName: newString[i],
+      modifiedName: result[i],
       id: i + 1
     });
   }
