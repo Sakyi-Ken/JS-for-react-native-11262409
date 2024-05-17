@@ -1,0 +1,21 @@
+# DCIT 202 MOBILE APPLICATION - ASSIGNMENT 1
+
+## 11262409
+
+### This project has two files, task 1 and 2 is in one file and task 3 is in the other file.
+
+#### TASK 1
+
+Task 1 emcompasses a function that takes only one argument which is an array of numbers and return a modified form of the numbers, where each even number is squared and each odd number is tripled.
+
+#### TASK 2
+
+Task 2 embodies a function that allows two arguments which is an array of names and the modified array of the numbers. The function return a modified each name based on the corresponding number.
+
+- Capitalize the entire string if the number is even.
+- Convert the string to lowercase if the number is odd.
+
+#### TASK 3
+
+Task 3 makes use of the two functions in the first file that is, task 1 and 2. Task 3 is a function that permits two arguments that is, array of names and array of modified names from Task 2.
+This function returns an array of objects, each containing originalName, modifiedName, and id (auto-incremented starting from 1).
