@@ -13,5 +13,5 @@ import { processArray, formatArrayStrings } from "./arrayManipulation";
   }
   return profiles;
 }
-console.log(formatArrayStrings(['John', 'Jane', 'Mike'], `${newArray}`));
+console.log(formatArrayStrings(['John', 'Jane', 'Mike'], [2,5,8]));
 console.log(createUserProfiles( `${arrayOfStrings} ${newString}`));
